@@ -1,3 +1,9 @@
+# Copyright (C) 1995-2019, Rene Brun and Fons Rademakers.
+# All rights reserved.
+#
+# For the licensing terms see $ROOTSYS/LICENSE.
+# For the list of contributors see $ROOTSYS/README/CREDITS.
+
 ROOT_GENERATE_DICTIONARY(MyDict1 ${CMAKE_CURRENT_SOURCE_DIR}/MyClass1.h)
 ROOT_GENERATE_DICTIONARY(MyDict2 ${CMAKE_CURRENT_SOURCE_DIR}/MyClass2.h)
 ROOT_GENERATE_DICTIONARY(MyDict3 ${CMAKE_CURRENT_SOURCE_DIR}/MyClass3.h)

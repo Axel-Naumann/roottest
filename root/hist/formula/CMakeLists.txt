@@ -1,3 +1,9 @@
+# Copyright (C) 1995-2019, Rene Brun and Fons Rademakers.
+# All rights reserved.
+#
+# For the licensing terms see $ROOTSYS/LICENSE.
+# For the list of contributors see $ROOTSYS/README/CREDITS.
+
 ROOTTEST_ADD_TEST(assertTernary MACRO assertTernary.C OUTREF assertTernary.ref)
 ROOTTEST_ADD_TEST(execGetExp MACRO execGetExp.C OUTREF execGetExp.ref)
 ROOTTEST_ADD_TEST(runconstargs MACRO runconstargs.C+ OUTREF_CINTSPECIFIC constargs.ref)

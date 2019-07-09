@@ -1,3 +1,9 @@
+# Copyright (C) 1995-2019, Rene Brun and Fons Rademakers.
+# All rights reserved.
+#
+# For the licensing terms see $ROOTSYS/LICENSE.
+# For the list of contributors see $ROOTSYS/README/CREDITS.
+
 ROOTTEST_ADD_TEST(runatlasaod
                   COPY_TO_BUILDDIR small_aod.pool.root
                   MACRO runatlasaod.C
@@ -39,4 +45,3 @@ ROOTTEST_ADD_TEST(stltest2
 ROOTTEST_ADD_TEST(foreign
                   COPY_TO_BUILDDIR foreign.root
                   MACRO runforeign.C)
-

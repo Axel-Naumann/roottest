@@ -1,3 +1,9 @@
+# Copyright (C) 1995-2019, Rene Brun and Fons Rademakers.
+# All rights reserved.
+#
+# For the licensing terms see $ROOTSYS/LICENSE.
+# For the list of contributors see $ROOTSYS/README/CREDITS.
+
 # FIXME: Temporary workaround for runtime_cxxmodules;
 if(NOT ROOT_runtime_cxxmodules_FOUND)
 ROOTTEST_ADD_TEST(getFuncBody

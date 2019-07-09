@@ -1,3 +1,9 @@
+# Copyright (C) 1995-2019, Rene Brun and Fons Rademakers.
+# All rights reserved.
+#
+# For the licensing terms see $ROOTSYS/LICENSE.
+# For the list of contributors see $ROOTSYS/README/CREDITS.
+
 # This particular test has to be put in a separate directory, otherwise, for a reason
 # which I cannot figure out, CMake will pass multiple times the "-D"s relative to the
 # cling workarounds to genreflex. Given that other tests check some properties of the
@@ -16,4 +22,3 @@ ROOTTEST_ADD_TEST(checkEnumFwdDecl
                   DEPENDS checkEnumFwdDeclyDict-libgen-build checkEnumFwdDeclxDict-libgen-build)
 
 ROOTTEST_ADD_TESTDIRS()
-

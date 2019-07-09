@@ -1,3 +1,9 @@
+# Copyright (C) 1995-2019, Rene Brun and Fons Rademakers.
+# All rights reserved.
+#
+# For the licensing terms see $ROOTSYS/LICENSE.
+# For the list of contributors see $ROOTSYS/README/CREDITS.
+
 foreach(_i 1 2 3 4 5 6)
   ROOTTEST_ADD_TEST(data${_i}
                     MACRO writefile.C
