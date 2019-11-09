@@ -122,13 +122,15 @@ set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${ROOTTEST_DIR}/cmake/modules")
 
 # Find python.
 if(ROOT_python_FOUND)
-  find_package(PythonInterp)
-  if(PYTHONINTERP_FOUND)
-    execute_process(COMMAND ${PYTHON_EXECUTABLE} -c "import sys;sys.stdout.write(sys.prefix)"
-                    OUTPUT_VARIABLE PYTHON_PREFIX)
-    set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${PYTHON_PREFIX})
+  if (NOT PYTHON_EXECUTABLE)
+    find_package(PythonInterp)
+    if(PYTHONINTERP_FOUND)
+      execute_process(COMMAND ${PYTHON_EXECUTABLE} -c "import sys;sys.stdout.write(sys.prefix)"
+                       OUTPUT_VARIABLE PYTHON_PREFIX)
+      set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${PYTHON_PREFIX})
+    endif()
+    find_package(PythonLibs)
   endif()
-  find_package(PythonLibs)
 endif()
 
 #---Set flag for PyROOT tests that are expected to fail in experimental
