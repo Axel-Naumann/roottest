@@ -15,7 +15,7 @@ ROOTTEST_ADD_TEST(expressiveErrorMessages
                   DEPENDS ${GENERATE_REFLEX_TEST})
 
 ROOTTEST_ADD_TEST(rlibmap
-                  EXEC rlibmapLauncher.py
+                  EXEC ${PYTHON_EXECUTABLE} rlibmapLauncher.py
                   PASSRC 1
                   OUTREF  rlibmap.ref)
 
